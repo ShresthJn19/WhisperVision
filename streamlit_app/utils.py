@@ -39,10 +39,16 @@ def load_subtitles(path: str) -> List[str]:
 
 # Loading the video and subtitles simultaneously
 def load_data(path: str):
-    path = bytes.decode(path.numpy())  # type: ignore
+    path = bytes.decode(path.numpy())
+
+    # Path Splitter for MacOS/Linux
     file_name = path.split('/')[-1].split('.')[0]
-    video_path = os.path.join('..', 'dataset', 'videos', f'{file_name}.mpg')
-    subtitles_path = os.path.join('..', 'dataset', 'subtitles', f'{file_name}.align')
+
+    # for Windows
+    # file_name = path.split('\\')[-1].split('.')[0]
+
+    video_path = os.path.join('..', 'dataset', 'videos', f'{file_name}.mpg')  # replace with your location
+    subtitles_path = os.path.join('..', 'dataset', 'subtitles', f'{file_name}.align')  # replace with your location
     frames = load_video(video_path)
     subtitles = load_subtitles(subtitles_path)
 
