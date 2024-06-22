@@ -32,7 +32,7 @@ To get started with WhisperVision, follow these steps:
 
 1. **Clone the repository:**
     \`\`\`sh
-    git clone https://github.com/ShresthJn/WhisperVision.git
+    git clone https://github.com/Shresth-Jn19/WhisperVision.git
     cd WhisperVision
     \`\`\`
 
