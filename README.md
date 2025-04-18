@@ -1,4 +1,4 @@
-# 🧠 WhisperVision — Real-Time Lip Reading from Silent Video
+# 🧠 WhisperVision — Lip Reading from Silent Video
 
 WhisperVision is a deep learning pipeline that reads lips and predicts spoken sentences using only silent video input. Built using 3D CNNs, BiLSTMs, and CTC decoding, this system enables voice-free communication, real-time inference, and silent speech recognition — no audio needed.
 
